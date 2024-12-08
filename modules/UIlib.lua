@@ -221,7 +221,7 @@ function UIlib:CreateTab(PylonInstance,Title)
     TabButton.BackgroundColor3 = Color3.fromRGB(20, 27, 30)
     TabButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
     TabButton.BorderSizePixel = 0
-    TabButton.Size = UDim2.new(0.210572749, 0, 0.104166664, 0)
+    TabButton.Size = UDim2.new(0.194, 0,0.051, 0)
     TabButton.Font = Enum.Font.RobotoMono
     TabButton.FontFace = Font.new("rbxasset://fonts/families/RobotoMono.json", Enum.FontWeight.Bold)
     TabButton.Text = Title
