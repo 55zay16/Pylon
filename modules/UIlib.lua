@@ -79,7 +79,7 @@ function UIlib:InitWindow(Title)
     Tabs.Size = UDim2.new(0.999818683, 0, 0.104166664, 0)
     Tabs.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
     Tabs.ScrollBarThickness = 4
-    Tabs.ScrollingDirection = Enum.ScrollingDirection.X
+    Tabs.ScrollingDirection = Enum.ScrollingDirection.X 
     Tabs.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
 
     UIListLayout.Parent = Tabs
