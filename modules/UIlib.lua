@@ -161,7 +161,7 @@ function UIlib:InitWindow(Title)
                 Dropdown:TweenSize(UDim2.new(0.999818683, 0, 0, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Sine, 0.3, true)
             elseif Minimize.Rotation == 180 then
                 TweenService:Create(Minimize, TweenInfo.new(0.3, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {Rotation = 0}):Play()
-                Dropdown:TweenSize(UDim2.new(0.999818683, 0, 0.104166664, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Sine, 0.3, true)
+                Dropdown:TweenSize(UDim2.new(0.999818683, 0, 12, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Sine, 0.3, true)
             end
         end)
 
