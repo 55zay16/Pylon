@@ -85,6 +85,7 @@ function UIlib:InitWindow(Title)
 
     UIListLayout.Parent = Tabs
     UIListLayout.FillDirection = Enum.FillDirection.Horizontal
+    UIListLayout.Padding = UDim.new(0, 5)
     UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 
     Border.Name = "Border"
