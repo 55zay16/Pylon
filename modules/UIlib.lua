@@ -70,7 +70,7 @@ function UIlib:InitWindow(Title)
     Dropdown.Position = UDim2.new(-0.00665500481, 0, 0.988693237, 0)
     Dropdown.Size = UDim2.new(1.00665498, 0, 12, 0)
 
-    Tabs.Name = "Tabs"
+    Tabs.Name = "Tabs" 
     Tabs.Parent = Dropdown
     Tabs.Active = true
     Tabs.BackgroundColor3 = Color3.fromRGB(30, 39, 44)
@@ -79,6 +79,7 @@ function UIlib:InitWindow(Title)
     Tabs.Size = UDim2.new(0.999818683, 0, 0.104166664, 0)
     Tabs.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
     Tabs.ScrollBarThickness = 4
+    Tabs.ScrollingDirection = Enum.ScrollingDirection.X 
     Tabs.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
 
     UIListLayout.Parent = Tabs
@@ -96,7 +97,7 @@ function UIlib:InitWindow(Title)
 
 
     coroutine.wrap(function() 
-        local script = Instance.new('Script', Pylon)
+        local script = Instance.new('Script', Main)
         script.Name = "Pylon-Handler"
 
         local UserInputService = game:GetService("UserInputService")
