@@ -1,5 +1,6 @@
 local UIlib = {}
 
+-- Creates a empty pylon window
 function UIlib:CreateWindow(Title)
     local Pylon = Instance.new("ScreenGui")
     local Main = Instance.new("TextLabel")
