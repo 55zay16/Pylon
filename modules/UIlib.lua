@@ -173,5 +173,60 @@ function UIlib:CreateWindow(Title)
     return Pylon
 end
 
+function UIlib:CreateTab(PylonInstance,Title)
+    local TabName = Instance.new("Frame")
+    local Buttons = Instance.new("ScrollingFrame")
+    local UIListLayout = Instance.new("UIListLayout")
+    local Settings = Instance.new("ScrollingFrame")
+    local UIListLayout_2 = Instance.new("UIListLayout")
+    local TabButton = Instance.new("TextButton")
+
+    TabName.Name = Title
+    TabName.Parent = PylonInstance.Main.Dropdown
+    TabName.BackgroundColor3 = Color3.fromRGB(29, 38, 43)
+    TabName.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    TabName.BorderSizePixel = 0
+    TabName.Position = UDim2.new(0, 0, 0.104166664, 0)
+    TabName.Size = UDim2.new(0.641362786, 0, 0.895833313, 0)
+
+    Buttons.Name = "Buttons"
+    Buttons.Parent = TabName
+    Buttons.Active = true
+    Buttons.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Buttons.BackgroundTransparency = 1.000
+    Buttons.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    Buttons.BorderSizePixel = 0
+    Buttons.Size = UDim2.new(1, 0, 1, 0)
+    Buttons.ScrollBarThickness = 4
+
+    UIListLayout.Parent = Buttons
+    UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+    Settings.Name = "Settings"
+    Settings.Parent = TabName
+    Settings.Active = true
+    Settings.BackgroundColor3 = Color3.fromRGB(36, 49, 54)
+    Settings.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    Settings.BorderSizePixel = 0
+    Settings.Position = UDim2.new(1, 0, 0, 0)
+    Settings.Size = UDim2.new(0.558897257, 0, 1, 0)
+    Settings.ScrollBarThickness = 4
+
+    UIListLayout_2.Parent = Settings
+    UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+
+    TabButton.Name = "TabButton"
+    TabButton.Parent = PylonInstance.Main.Dropdown.Tabs
+    TabButton.BackgroundColor3 = Color3.fromRGB(20, 27, 30)
+    TabButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    TabButton.BorderSizePixel = 0
+    TabButton.Size = UDim2.new(0.210572749, 0, 0.104166664, 0)
+    TabButton.Font = Enum.Font.RobotoMono
+    TabButton.Text = Title
+    TabButton.TextColor3 = Color3.fromRGB(173, 226, 255)
+    TabButton.TextScaled = true
+    TabButton.TextSize = 14.000
+    TabButton.TextWrapped = true
+end
 
 return UIlib
