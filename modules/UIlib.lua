@@ -1,3 +1,4 @@
+local TweenService = game:GetService("TweenService")
 local UIlib = {}
 
 function UIlib:InitWindow(Title)
@@ -156,10 +157,10 @@ function UIlib:InitWindow(Title)
 
         Minimize.MouseButton1Click:Connect(function()
             if Minimize.Rotation == 0 then
-                Minimize:TweenRotation(180, Enum.EasingDirection.Out, Enum.EasingStyle.Sine, 0.3, true)
+                TweenService:Create(Minimize, TweenInfo.new(0.3, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {Rotation = 180}):Play()
                 Dropdown:TweenSize(UDim2.new(0.999818683, 0, 0, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Sine, 0.3, true)
             elseif Minimize.Rotation == 180 then
-                Minimize:TweenRotation(180, Enum.EasingDirection.Out, Enum.EasingStyle.Sine, 0.3, true)
+                TweenService:Create(Minimize, TweenInfo.new(0.3, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {Rotation = 0}):Play()
                 Dropdown:TweenSize(UDim2.new(0.999818683, 0, 0.104166664, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Sine, 0.3, true)
             end
         end)
