@@ -81,6 +81,7 @@ function UIlib:CreateWindow(Title)
     Tabs.Size = UDim2.new(0.999818683, 0, 0.104166664, 0)
     Tabs.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
     Tabs.ScrollBarThickness = 4
+    Tabs.ScrollingDirection = Enum.ScrollingDirection.X
     Tabs.VerticalScrollBarPosition = Enum.VerticalScrollBarPosition.Left
     
     UIListLayout.Parent = Tabs
@@ -222,11 +223,14 @@ function UIlib:CreateTab(PylonInstance,Title)
     TabButton.BorderSizePixel = 0
     TabButton.Size = UDim2.new(0.210572749, 0, 0.104166664, 0)
     TabButton.Font = Enum.Font.RobotoMono
+    TabButton.FontFace = Font.new("rbxasset://fonts/families/RobotoMono.json", Enum.FontWeight.Bold)
     TabButton.Text = Title
     TabButton.TextColor3 = Color3.fromRGB(173, 226, 255)
     TabButton.TextScaled = true
     TabButton.TextSize = 14.000
     TabButton.TextWrapped = true
+
+    return TabName
 end
 
 return UIlib
