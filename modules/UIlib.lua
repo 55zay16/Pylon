@@ -23,7 +23,8 @@ function UIlib:CreateWindow(Title)
     Main.BorderSizePixel = 0
     Main.Position = UDim2.new(0.305642635, 0, 0.198492467, 0)
     Main.Size = UDim2.new(0.324973881, 0, 0.0402010046, 0)
-    Main.Font = Enum.Font.Unknown
+    Main.Font = Enum.Font.RobotoMono
+    Main.FontFace = Font.new("rbxasset://fonts/families/RobotoMono.json", Enum.FontWeight.Bold)
     Main.Text = Title
     Main.TextColor3 = Color3.fromRGB(255, 255, 255)
     Main.TextScaled = true
