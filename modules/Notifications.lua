@@ -1,5 +1,5 @@
 local Notifications = {}
-Notifications.Instance = nil
+Notifications.instance = nil
 
 function Notifications:Init()
     local PylonNotifications = Instance.new("ScreenGui")
@@ -22,9 +22,11 @@ function Notifications:Init()
     UIListLayout.Parent = List
     UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
     UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Bottom
+    UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Right
+    UIListLayout.FillDirection = Enum.FillDirection.Vertical
     UIListLayout.Padding = UDim.new(0, 5)
 
-    Notifications.Instance = PylonNotifications
+    Notifications.instance = PylonNotifications
 end
 
 function Notifications:Notify(title, message)
@@ -37,7 +39,7 @@ function Notifications:Notify(title, message)
     local UICorner = Instance.new("UICorner")
     
     Notification.Name = "Notification"
-    Notification.Parent = Notifications.Instance.List
+    Notification.Parent = Notifications.instance.List
     Notification.BackgroundColor3 = Color3.fromRGB(20, 26, 29)
     Notification.BorderColor3 = Color3.fromRGB(0, 0, 0)
     Notification.BorderSizePixel = 0
@@ -93,7 +95,7 @@ function Notifications:Notify(title, message)
 
     --tween bar
 
-    local Tween = game:GetService("TweenService"):Create(Bar, TweenInfo.new(1, Enum.EasingStyle.Sine), {Size = UDim2.new(0.972972989, 0, 0, 0)})
+    local Tween = game:GetService("TweenService"):Create(Bar, TweenInfo.new(1, Enum.EasingStyle.Sine), {Size = UDim2.new(0, 0, 0.0865384638, 0)})
     Tween:Play()
     task.wait(1)
     Notification:Destroy()
