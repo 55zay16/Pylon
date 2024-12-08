@@ -74,7 +74,7 @@ function UIlib:InitWindow(Title)
     Tabs.Name = "Tabs" 
     Tabs.Parent = Dropdown
     Tabs.Active = true
-    Tabs.BackgroundColor3 = Color3.fromRGB(30, 39, 44)
+    Tabs.BackgroundColor3 = Color3.fromRGB(20, 27, 30)
     Tabs.BorderColor3 = Color3.fromRGB(0, 0, 0)
     Tabs.BorderSizePixel = 0
     Tabs.Size = UDim2.new(0.999818683, 0, 0.104166664, 0)
