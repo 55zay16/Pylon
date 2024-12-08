@@ -1,5 +1,4 @@
 local UIlib = {}
-local UIlib = {}
 
 function UIlib:InitWindow(Title)
     local Pylon = Instance.new("ScreenGui")
@@ -170,5 +169,4 @@ function UIlib:InitWindow(Title)
     end)()
 end
 
-return UIlib
 return UIlib
