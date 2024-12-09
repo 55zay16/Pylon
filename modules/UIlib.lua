@@ -74,7 +74,7 @@ function UIlib:InitWindow(Title)
     Tabs.Name = "Tabs" 
     Tabs.Parent = Dropdown
     Tabs.Active = true
-    Tabs.BackgroundColor3 = Color3.fromRGB(20, 27, 30)
+    Tabs.BackgroundColor3 = Color3.fromRGB(30, 39, 44)
     Tabs.BorderColor3 = Color3.fromRGB(0, 0, 0)
     Tabs.BorderSizePixel = 0
     Tabs.Size = UDim2.new(0.999818683, 0, 0.104166664, 0)
@@ -329,6 +329,7 @@ function UIlib:CreateButton(TabInstance,Title,ButtonSettings,Callback)
             TextBoxTabname.Size = UDim2.new(0, 223, 0, 22)
             TextBoxTabname.Font = Enum.Font.Unknown
             TextBoxTabname.PlaceholderText = Item["Placeholder"]
+            TextBoxTabname.Text = Item["Value"]
             TextBoxTabname.TextColor3 = Color3.fromRGB(171, 227, 255)
             TextBoxTabname.TextScaled = true
             TextBoxTabname.TextSize = 14.000
