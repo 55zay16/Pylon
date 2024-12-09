@@ -258,7 +258,7 @@ function UIlib:CreateTab(PylonInstance, Title)
     return TabName
 end
 
-function UIlib:CreateButton(Title,TabInstance,ButtonSettings,Callback)
+function UIlib:CreateButton(TabInstance,Title,ButtonSettings,Callback)
     local Button = Instance.new("TextButton")
     local UIPadding = Instance.new("UIPadding")
     local SettingsButton = Instance.new("TextButton")
