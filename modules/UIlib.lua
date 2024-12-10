@@ -224,7 +224,7 @@ function UIlib:CreateTab(PylonInstance, Title)
 
     TabButton.Name = "TabButton"
     TabButton.Parent = PylonInstance.Main.Dropdown.Tabs
-    TabButton.BackgroundColor3 = Color3.fromRGB(20, 27, 30)
+    TabButton.BackgroundColor3 = Color3.fromRGB(30, 39, 44)
     TabButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
     TabButton.BorderSizePixel = 0
     TabButton.Position = UDim2.new(0.305642635, 0, 0.238806695, 0)
