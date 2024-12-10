@@ -213,6 +213,7 @@ function UIlib:CreateTab(PylonInstance, Title)
     Settings.Size = UDim2.new(0.558897257, 0, 1, 0)
     Settings.ScrollBarThickness = 4
     Settings.AutomaticCanvasSize = Enum.AutomaticSize.Y
+    Settings.SortOrder = Enum.SortOrder.LayoutOrder
     Settings.ScrollingDirection = Enum.ScrollingDirection.Y
     
     UIListLayout_2.Parent = Settings
