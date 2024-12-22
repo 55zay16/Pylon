@@ -6,4 +6,6 @@ elseif game.GameId == 3808081382 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/55zay16/Pylon/refs/heads/main/scripts/The%20Strongest%20Battlegrounds.lua"))()
 elseif game.GameId == 4544243950 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/55zay16/Pylon/refs/heads/main/scripts/Killstreak.lua"))()
+elseif game.GameId == 2263267302 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/55zay16/Pylon/refs/heads/main/scripts/Infamy.lua"))()
 end
