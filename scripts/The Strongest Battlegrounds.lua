@@ -166,7 +166,7 @@ local NAMETAGS = Core.UIlib:CreateButton(Visuals, "Nametags",{},function(NewStat
     end
 end)
 
-game.Players.PlayerAdded:connect(function(Player)
+game.Players.PlayerAdded:Connect(function(Player)
     Player.CharacterAdded:Connect(function(Character)
         task.wait(0.3)
         if CANESP == true then
