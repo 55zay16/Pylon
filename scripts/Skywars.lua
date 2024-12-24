@@ -208,7 +208,7 @@ local ESP = Core.UIlib:CreateButton(Visuals, "ESP",{},function(NewStatus)
 end)
 
 
-game.Players.PlayerAdded:connect(function(Player) 
+game.Players.PlayerAdded:Connect(function(Player) 
     if Player ~= lplr then
         Player.CharacterAdded:Connect(function(Character)
             if CANESP == true then
@@ -344,7 +344,7 @@ local CanInfiniteJump = false
 local InfiniteJump = Core.UIlib:CreateButton(Movement, "Infinite Jump",{},function(NewStatus)
     CanInfiniteJump = NewStatus
 end)
-game:GetService("UserInputService").JumpRequest:connect(function()
+game:GetService("UserInputService").JumpRequest:Connect(function()
     if CanInfiniteJump == true then
         lplr.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
     end
