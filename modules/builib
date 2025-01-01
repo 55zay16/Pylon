@@ -373,7 +373,7 @@ function builib:AttachTab(Window,TabTitle,TabData)
 						TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
 						TextBox.BorderSizePixel = 0
 						TextBox.Size = UDim2.new(0.97299999, 0, 0.05, 0)
-						TextBox.Font = Enum.Font.Unknown
+						TextBox.Font = Enum.Font.Nunito
 						TextBox.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
 						TextBox.PlaceholderText = "Textbox"
 						TextBox.Text = Setting.Value
