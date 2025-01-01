@@ -210,7 +210,7 @@ function builib:AttachTab(Window,TabTitle,TabData)
 	Tab.BorderSizePixel = 0
 	Tab.Size = UDim2.new(0.189486548, 0, 0.800000012, 0)
 	Tab.Font = Enum.Font.Nunito
-	Tab.Text = "Tab"
+	Tab.Text = TabTitle
 	Tab.TextColor3 = Color3.fromRGB(255, 255, 255)
 	Tab.TextScaled = true
 	Tab.TextSize = 14.000
