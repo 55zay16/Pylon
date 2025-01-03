@@ -1,5 +1,5 @@
 # Pylon
-> A highly powerful rewrite of the dexion script
+> A highly powerful rewrite of the Dexion script
 
 ## Improvements
 * ✅ Better UI
@@ -9,5 +9,5 @@
 
 ## Goals & Plans
 * 💭 Creating a powerful script hub
-* 💭 Making powerful scripts for not only script users but also script developers
-* 💭 Making all non VIP scripts open source
+* 💭 Making powerful scripts for not only script users, but also script developers
+* 💭 Making all non-VIP scripts open source
