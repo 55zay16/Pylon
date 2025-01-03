@@ -13,5 +13,5 @@ elseif game.GameId == 6035872082 then
 elseif game.GameId == 4281211770 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/55zay16/Pylon/refs/heads/main/scripts/GGFFA.lua"))()
 elseif game.GameId == 6669140287 then
-    loadstring(game:HttpGet("https://github.com/55zay16/Pylon/blob/main/scripts/Blades%20And%20Bullshit.lua"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/55zay16/Pylon/refs/heads/main/scripts/Blades%20And%20Bullshit.lua"))()
 end
